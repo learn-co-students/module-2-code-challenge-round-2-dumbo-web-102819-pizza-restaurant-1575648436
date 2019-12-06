@@ -1,0 +1,10 @@
+h1>Pizza</h1>
+  </tr>
+  <%= @pizzas.each do |pizza| %>
+    <tr>
+      <td><%= pizza.name %></td>
+      <td><%= pizza.ingredient %></td>
+      <%= link_to '', restaurants_path(@restaurant) %>
+    </tr>
+  <% end %>
+</table>
